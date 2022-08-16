@@ -10,7 +10,7 @@ package tests
 
 import (
 	"fmt"
-	"github.com/kavanahuang/common"
+	"github.com/kavanahuang/status"
 	"github.com/kavanahuang/test"
 	"testing"
 )
@@ -28,7 +28,7 @@ func TestHttpStatusStart(t *testing.T) {
 func TestHttpStatus(t *testing.T) {
 	msg := "Test http status "
 	assert := 200
-	result := common.OK.Code
+	result := status.OK.Code
 	if result == assert {
 		test.Test.T(t).Logs(msg + "code: " + fmt.Sprint(assert)).Ok(result)
 	} else {
@@ -36,7 +36,7 @@ func TestHttpStatus(t *testing.T) {
 	}
 
 	assertMsg := "OK"
-	resultMsg := common.OK.Msg
+	resultMsg := status.OK.Msg
 	if assertMsg == resultMsg {
 		test.Test.T(t).Logs(msg + "Msg: " + assertMsg).Ok(resultMsg)
 	} else {

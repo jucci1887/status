@@ -4,7 +4,7 @@
  File: HttpStatus
  Date: 7/28/22 6:28 AM
 */
-package tests
+package status
 
 type HttpStatus struct {
 	Code int
