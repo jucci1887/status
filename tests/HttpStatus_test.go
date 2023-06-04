@@ -10,8 +10,8 @@ package tests
 
 import (
 	"fmt"
-	"github.com/kavanahuang/status"
-	"github.com/kavanahuang/test"
+	"github.com/jucci1887/status"
+	"github.com/jucci1887/test"
 	"testing"
 )
 
